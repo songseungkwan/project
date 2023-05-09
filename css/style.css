@@ -1,0 +1,523 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: "KCCChassam";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KyoboHandwriting2021sjy";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KimjungchulGothic-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* 전체 영역 */
+#wrap {
+  width: 1920px;
+}
+
+/* 헤더 */
+.header {
+  width: 1920px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #8c4a2e;
+  margin: 0 auto;
+}
+.header_box {
+  width: 640px;
+  height: 200px;
+}
+.header_left {
+  position: relative;
+}
+.header_left #top_logo {
+  width: 200px;
+  height: 150px;
+  background-image: url(../img/logo.jpg);
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.header_gnb ul li {
+  display: inline-block;
+  top: 91px;
+  left: 90px;
+  position: relative;
+  margin-right: 50px;
+  font-size: 20px;
+}
+.header_gnb ul li a {
+  color: #8c4a2e;
+  font-size: 16px;
+}
+.header_gnb ul li a:hover {
+  color: goldenrod;
+}
+
+.header_right ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 91px;
+  margin: 0;
+  left: 0;
+}
+.header_right ul li {
+  font-size: 22px;
+  margin-right: 30px;
+}
+
+/* 메인 비쥬얼 */
+#main_visual {
+  width: 100%;
+  height: 1080px;
+  position: relative;
+}
+#main_visual > .video_coffee {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* 소개 */
+#about {
+  width: 100%;
+  height: 611px;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #8c4a2e;
+  margin: auto;
+}
+#about_txt_box {
+  width: 800px;
+  height: 300px;
+  left: 0;
+  padding-top: 100px;
+  margin: auto;
+}
+#about_txt {
+  font-style: italic;
+  font-size: 35px;
+  font-family: "KimjungchulGothic-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  word-break: keep-all;
+  margin: auto;
+}
+
+/* sns */
+#sns {
+  width: 100%;
+  height: 557px;
+  border-bottom: 1px solid #8c4a2e;
+}
+#sns ul {
+  width: 165px;
+  height: 190px;
+  text-align: center;
+  margin: 0 auto;
+}
+#sns ul li {
+  padding-bottom: 50px;
+}
+#sns ul li:first-child {
+  padding-top: 50px;
+  font-size: 28px;
+  color: black;
+}
+#sns ul li:last-child {
+  font-size: 20px;
+  color: #8c4a2e;
+}
+#sns ul li:first-child a {
+  color: black;
+}
+#sns ul li:last-child a {
+  color: #8c4a2e;
+}
+
+.sns_container {
+  width: 1600px;
+  height: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.bxslider {
+  width: 1590px;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* 메뉴 */
+#menu_container {
+  width: 1920px;
+  height: 800px;
+  margin: 0 auto;
+  border-bottom: 1px solid #8c4a2e;
+}
+
+swiper-container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+swiper-container:first-child {
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+swiper-container > span {
+  position: absolute;
+}
+
+swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+swiper-slide img {
+  position: absolute;
+}
+.beer > swiper-slide {
+  background-color: rgb(255, 255, 255);
+}
+.coffee > swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.non_coffee > swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.beer > swiper-slide img {
+  width: 90%;
+  height: 90%;
+}
+
+/* 푸터 */
+#footer {
+  width: 1920px;
+  height: 220px;
+}
+
+#footer_container {
+  width: 1920px;
+  height: 50px;
+}
+#footer_container ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+#footer_container ul li {
+  margin: 0 20px;
+}
+#footer_container ul li a {
+  font-size: 20px;
+  color: #8c4a2e;
+}
+#footer_container p {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#footer_info {
+  text-align: center;
+  line-height: 1.3;
+  font-size: 14px;
+  font-family: "KyoboHandwriting2021sjy";
+}
+#footer_info a {
+  color: #000;
+}
+.strong {
+  font-weight: 700;
+  font-size: 16px;
+  color: #c8947e;
+}
+
+/* 메뉴 버튼 */
+
+/* position the toggle button */
+.menu-container {
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+}
+
+/* position the toggle button */
+.menu-toggle-btn {
+  height: 56px;
+  width: 56px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8c4a2e;
+  box-shadow: 3px 3px 2px 1px rgb(0 0 0 / 20%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.menu-toggle-btn i {
+  font-size: 2rem;
+  color: #eeeeee;
+  transition: 0.5s;
+}
+
+.menu-toggle-btn.effect i {
+  transform: rotate(135deg);
+}
+.menu-list {
+  list-style: none;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.menu-list .menu-item {
+  height: 2.3rem;
+  width: 2.3rem;
+  bottom: 0.25rem;
+  right: 0.25rem;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+  transition: 0.5s;
+}
+
+.menu-list .menu-item a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.menu-list .menu-item:hover {
+  background-color: #333;
+}
+
+.menu-list.effect .menu-item {
+  box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.menu-list.effect .menu-item:nth-of-type(1) {
+  bottom: 4.25rem;
+  right: 0.5rem;
+  transition-delay: 0.2s;
+}
+
+.menu-list.effect .menu-item:nth-of-type(2) {
+  bottom: 3.5rem;
+  right: 3.5rem;
+  transition-delay: 0.1s;
+}
+
+.menu-list.effect .menu-item:nth-of-type(3) {
+  bottom: 0.5rem;
+  right: 4.25rem;
+}
+
+/* add more items here */
+
+#menu_wrap {
+  width: 100%;
+  border-bottom: 1px solid #8c4a2e;
+  margin: 0 auto;
+}
+
+#section_lnb {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+#section_lnb ul {
+  width: 870px;
+  height: 58px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#section_lnb ul li {
+  width: 145px;
+  height: 57px;
+  text-align: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+#section_lnb ul li a {
+  color: black;
+}
+#section_lnb ul li:first-child:hover {
+  border-bottom: 1px solid red;
+}
+#section_lnb ul li:nth-child(2):hover {
+  border-bottom: 1px solid red;
+}
+#section_lnb ul li:nth-child(3):hover {
+  border-bottom: 1px solid red;
+}
+
+#section_top {
+  width: 100%;
+  height: 479px;
+  background-color: #fff;
+}
+
+#section_bot {
+  width: 100%;
+  height: 1512px;
+  background-color: #f5f0e9;
+}
+
+/* s mint */
+
+.subMenu {
+  z-index: 1000;
+  width: 100%;
+  height: 50px;
+  background: #c8947e;
+}
+.subMenu .inner {
+  padding: 0;
+  font-weight: 400;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.subNavBtn {
+  height: 35px;
+  width: 10%;
+  float: left;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 15px 2% 0 2%;
+  text-align: center;
+  color: #fff;
+}
+.subMenu a:hover {
+  background: mistyrose;
+  color: lightslategray;
+}
+
+.active {
+  background: #25aae1;
+}
+.end {
+  margin: 0;
+}
+
+/* s mint SECTIONS */
+
+.section {
+  width: 100%;
+  max-width: 1600px;
+  min-width: 960px;
+  z-index: 10;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+  height: 500px;
+}
+.section h1 {
+  text-align: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+.sTop {
+  min-height: 130px;
+  background: #8c4a2e;
+  color: #fff;
+  padding: 50px 0;
+  height: 300px;
+}
+
+.s1 {
+  background: rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+
+
+
+.s2 {
+  background: #8c4a2e;
+}
+.s2 a {
+  color: #fff;
+}
+
+.s3 {
+  background: #fff;
+}
+
+.s4 {
+  background: #c8947e;
+}
+
+.s5 {
+  background: #bce1f1;
+  color: #3d3d3d;
+}
+
+.s6 {
+  background: #161616;
+}
